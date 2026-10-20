@@ -36,7 +36,8 @@ Una òptica, anomenada “Cul d'Ampolla”, vol informatitzar la gestió dels cl
 3. Variables d'entorn: Crear `.env` amb...  
     - MYSQL_ROOT_PASSWORD=ReplaceWithAStrongRootPassword
     - MYSQL_PASSWORD=ReplaceWithAStrongAppPassword
-4. Executar amb docker: `cd ... fins al nivell de directori corresponent del archiu 'docker-compose.yml'`
+4. Per executar el mysql container: `cd ... fins al nivell de directori corresponent del archiu 'docker-compose.yml'`
+
     ```docker
     # Build the images
     docker compose build
@@ -50,19 +51,22 @@ Una òptica, anomenada “Cul d'Ampolla”, vol informatitzar la gestió dels cl
     # View logs
     docker compose logs -f
 
-    # Copy script file from WINDOWS to container
-    docker cp "C:\Users\YourName\Desktop\init.sql" mysql-container:/tmp/init.sql
-
-    # Open the sql shell inside the container
-    docker exec -it mysql-container mysql -u root -p
-
-    # Execute the script from inside the MySQL shell
-    'SOURCE /tmp/init.sql;' or '\. /tmp/init.sql'
-
     # Stop the application
     docker compose down
     ```
+5. Per executar el script de creació del schema, tables and data:
+    - MySQL Workbench: run the script from the GUI
+    - SQL SHELL (CLI):
 
-5. Executar els scripts sql per crear i omplir la base de dades.
+        ```docker
+            # Copy script file from WINDOWS to container
+            docker cp "C:\Users\YourName\Desktop\init.sql" mysql-container:/tmp/init.sql
+
+            # Open the sql shell inside the container
+            docker exec -it mysql-container mysql -u root -p
+
+            # Execute the script from inside the MySQL shell
+            'SOURCE /tmp/init.sql;' or '\. /tmp/init.sql'
+        ```
 
 ## 🧩 Diagrames i justificació de decisions tècniques (si és aplicable)

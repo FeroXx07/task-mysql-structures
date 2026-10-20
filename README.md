@@ -8,6 +8,6 @@
 ## 🚀 Instal·lació i Execució
 1. Clonar el repositori: `git clone ...`   
 2. Visualitzar el diagrama
-3. Executar els scripts sql per crear i omplir la base de dades.
+3. Instruccions per executar a cada README.md del nivel
 
 ## 🧩 Diagrames i justificació de decisions tècniques (si és aplicable)
