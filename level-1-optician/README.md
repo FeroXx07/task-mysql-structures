@@ -1,0 +1,68 @@
+# task-mysql-structures 
+
+##  Enunciat de l'exercici
+Una òptica, anomenada “Cul d'Ampolla”, vol informatitzar la gestió dels clients/es i vendes d'ulleres.
+
+- En primer lloc, l'òptica vol saber quin és el proveïdor de cadascuna de les ulleres. En concret vol saber de cada proveïdor:
+    - El nom
+    - L'adreça (carrer, número, pis, porta, ciutat, codi postal i país)
+    - Telèfon
+    - Fax
+    - NIF.
+
+
+- La política de compres de l'òptica es basa que les ulleres d'una marca es compraran a un únic proveïdor (així en podrà treure més bons preus), però poden comprar ulleres de diverses marques a un proveïdor. De les ulleres vol saber:
+    - La marca.
+    - La graduació de cadascun dels vidres.
+    - El tipus de muntura (flotant, pasta o metàl·lica).
+    - El color de la muntura.
+    -   El color de cada vidre.
+    -   El preu.
+- Dels clients/es vol emmagatzemar:
+    - El nom.
+    - L'adreça postal.
+    - El telèfon.
+    - El correu electrònic.
+    - La data de registre.
+    - Quan arriba un/a client/a nou, emmagatzemar el/la client/a que li ha recomanat l'establiment (sempre que algú li hagi recomanat).
+    - El nostre sistema haurà d’indicar qui ha sigut l’empleat/da que ha venut cada ullera.
+
+## 🛠 Tecnologies  
+- MySQL - MySQL Workbench 8
+
+## 🚀 Instal·lació i Execució
+1. Clonar el repositori: `git clone ...`   
+2. Visualitzar el diagrama
+3. Variables d'entorn: Crear `.env` amb...  
+    - MYSQL_ROOT_PASSWORD=ReplaceWithAStrongRootPassword
+    - MYSQL_PASSWORD=ReplaceWithAStrongAppPassword
+4. Executar amb docker: `cd ... fins al nivell de directori corresponent del archiu 'docker-compose.yml'`
+    ```docker
+    # Build the images
+    docker compose build
+
+    # Start the containers
+    docker compose up -d
+
+    # Check running containers
+    docker compose ps
+
+    # View logs
+    docker compose logs -f
+
+    # Copy script file from WINDOWS to container
+    docker cp "C:\Users\YourName\Desktop\init.sql" mysql-container:/tmp/init.sql
+
+    # Open the sql shell inside the container
+    docker exec -it mysql-container mysql -u root -p
+
+    # Execute the script from inside the MySQL shell
+    'SOURCE /tmp/init.sql;' or '\. /tmp/init.sql'
+
+    # Stop the application
+    docker compose down
+    ```
+
+5. Executar els scripts sql per crear i omplir la base de dades.
+
+## 🧩 Diagrames i justificació de decisions tècniques (si és aplicable)
