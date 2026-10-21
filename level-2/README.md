@@ -43,10 +43,6 @@
 
 - Un usuari/ària pot marcar un comentari com m'agrada o no m'agrada. Caldrà portar un registre dels usuaris/es que han marcat un comentari com m'agrada/no m'agrada, i en quina data/hora ho van fer.
 
-
-
-
-
 ## 🛠 Tecnologies  
 - MySQL - MySQL Workbench 8
 
@@ -74,7 +70,7 @@
     # Stop the application
     docker compose down
     ```
-5. Per executar el script de creació del schema, tables and data:
+5. Per executar el script de creació i populació del schema, tables and data:
     - MySQL Workbench: run the script from the GUI
     - SQL SHELL (CLI):
 
@@ -89,4 +85,7 @@
             'SOURCE /tmp/init.sql;' or '\. /tmp/init.sql'
         ```
 
-## 🧩 Diagrames i justificació de decisions tècniques (si és aplicable)
+## 🧩 Diagrames i justificació de decisions tècniques
+
+### Youtube Entity Relationships
+![image info](youtube-eer-diagram.png)
