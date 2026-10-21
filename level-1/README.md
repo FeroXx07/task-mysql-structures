@@ -73,7 +73,6 @@ Una òptica, anomenada “Cul d'Ampolla”, vol informatitzar la gestió dels cl
     - Telèfon.
     - Si treballa com a cuiner/a o repartidor/a. Per a les comandes de repartiment a domicili interessa guardar qui és el repartidor/a que fa el lliurament de la comanda i la data/hora del moment del lliurament.
 
-
 ## 🛠 Tecnologies  
 - MySQL - MySQL Workbench 8
 
@@ -101,7 +100,7 @@ Una òptica, anomenada “Cul d'Ampolla”, vol informatitzar la gestió dels cl
     # Stop the application
     docker compose down
     ```
-5. Per executar el script de creació del schema, tables and data:
+5. Per executar el script de creació i populació del schema, tables and data:
     - MySQL Workbench: run the script from the GUI
     - SQL SHELL (CLI):
 
@@ -116,4 +115,10 @@ Una òptica, anomenada “Cul d'Ampolla”, vol informatitzar la gestió dels cl
             'SOURCE /tmp/init.sql;' or '\. /tmp/init.sql'
         ```
 
-## 🧩 Diagrames i justificació de decisions tècniques (si és aplicable)
+## 🧩 Diagrames i justificació de decisions tècniques
+
+### Optician Entity Relationships
+![image info](optician-eer-diagram.png)
+
+### Pizza Entity Relationships
+![image info](pizza-eer-diagram.png)
