@@ -1,6 +1,33 @@
 # task-mysql-structures 
 
-##  Enunciat de l'exercici
+##  Enunciat de l'exercici 1
+Una òptica, anomenada “Cul d'Ampolla”, vol informatitzar la gestió dels clients/es i vendes d'ulleres.
+
+- En primer lloc, l'òptica vol saber quin és el proveïdor de cadascuna de les ulleres. En concret vol saber de cada proveïdor:
+    - El nom
+    - L'adreça (carrer, número, pis, porta, ciutat, codi postal i país)
+    - Telèfon
+    - Fax
+    - NIF.
+
+
+- La política de compres de l'òptica es basa que les ulleres d'una marca es compraran a un únic proveïdor (així en podrà treure més bons preus), però poden comprar ulleres de diverses marques a un proveïdor. De les ulleres vol saber:
+    - La marca.
+    - La graduació de cadascun dels vidres.
+    - El tipus de muntura (flotant, pasta o metàl·lica).
+    - El color de la muntura.
+    -   El color de cada vidre.
+    -   El preu.
+- Dels clients/es vol emmagatzemar:
+    - El nom.
+    - L'adreça postal.
+    - El telèfon.
+    - El correu electrònic.
+    - La data de registre.
+    - Quan arriba un/a client/a nou, emmagatzemar el/la client/a que li ha recomanat l'establiment (sempre que algú li hagi recomanat).
+    - El nostre sistema haurà d’indicar qui ha sigut l’empleat/da que ha venut cada ullera.
+
+##  Enunciat de l'exercici 2
 
 **T’han contractat per a dissenyar una web que permeti fer comandes de menjar a domicili per Internet.**
 
@@ -47,7 +74,6 @@
     - Si treballa com a cuiner/a o repartidor/a. Per a les comandes de repartiment a domicili interessa guardar qui és el repartidor/a que fa el lliurament de la comanda i la data/hora del moment del lliurament.
 
 
-
 ## 🛠 Tecnologies  
 - MySQL - MySQL Workbench 8
 
@@ -81,7 +107,7 @@
 
         ```docker
             # Copy script file from WINDOWS to container
-            docker cp "C:\Users\YourName\Desktop\init.sql" mysql-container:/tmp/init.sql
+            docker cp "C:\Users\YourName\Desktop\sql-...-create.sql" mysql-container:/tmp/init.sql
 
             # Open the sql shell inside the container
             docker exec -it mysql-container mysql -u root -p
