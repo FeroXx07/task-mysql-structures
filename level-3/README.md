@@ -90,4 +90,7 @@ NOTA: Un cop creada les bases de dades, omplirem les taules amb dades de prova p
             'SOURCE /tmp/init.sql;' or '\. /tmp/init.sql'
         ```
 
-## 🧩 Diagrames i justificació de decisions tècniques (si és aplicable)
+## 🧩 Diagrames i justificació de decisions tècniques
+
+### Youtube Entity Relationships
+![image info](spotify-eer-diagram.png)
