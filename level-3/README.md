@@ -75,7 +75,7 @@ NOTA: Un cop creada les bases de dades, omplirem les taules amb dades de prova p
     # Stop the application
     docker compose down
     ```
-5. Per executar el script de creació i populació del schema, tables and data:
+5. Per executar el scripts SQL de creació i el de populació del schema, tables and data:
     - MySQL Workbench: run the script from the GUI
     - SQL SHELL (CLI):
 
